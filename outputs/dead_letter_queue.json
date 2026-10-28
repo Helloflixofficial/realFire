@@ -15,7 +15,7 @@
       "recent_activity": "",
       "connection_note": "Corrupt row missing full name and all contact information to test Dead Letter Queue isolation"
     },
-    "timestamp_utc": "2026-10-28T14:55:09.325651+00:00"
+    "timestamp_utc": "2026-10-28T18:55:59.253176+00:00"
   },
   {
     "record_id": "fhir_malformed_corrupt_999",
@@ -34,6 +34,6 @@
         ]
       }
     },
-    "timestamp_utc": "2026-10-28T14:55:20.789627+00:00"
+    "timestamp_utc": "2026-10-28T18:56:14.099802+00:00"
   }
 ]

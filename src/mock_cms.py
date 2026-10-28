@@ -84,6 +84,8 @@ def _save_to_disk() -> None:
 # ==============================================================================
 
 @app.get("/health", tags=["Health"])
+@app.get("/api/health", tags=["Health"], include_in_schema=False)
+@app.get("/api/index.py/health", tags=["Health"], include_in_schema=False)
 def health_check() -> Dict[str, Any]:
     """Liveness probe for the Mock CMS & Pipeline."""
     return {
@@ -245,6 +247,10 @@ def ping_llm() -> Dict[str, Any]:
 
 
 @app.get("/", response_class=HTMLResponse, tags=["Dashboard UI"])
+@app.get("/api/index.py", response_class=HTMLResponse, include_in_schema=False)
+@app.get("/api/index", response_class=HTMLResponse, include_in_schema=False)
+@app.get("/api", response_class=HTMLResponse, include_in_schema=False)
+@app.get("/api/", response_class=HTMLResponse, include_in_schema=False)
 def render_dashboard() -> str:
     """Renders the pure white dual-sidebar project management dashboard for the AI intake pipeline."""
     return """<!DOCTYPE html>
