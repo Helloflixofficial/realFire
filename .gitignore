@@ -1,0 +1,36 @@
+# ==============================================================================
+# SECRETS & ENVIRONMENT VARIABLES (STRICTLY IGNORED)
+# ==============================================================================
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Logs & Temporary Files
+*.log
+outputs/*.log
+outputs/test_*.json
+
+# IDE & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.system_generated/
+.agents/
+
+# Vercel Build Artifacts
+.vercel

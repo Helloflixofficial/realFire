@@ -1,0 +1,39 @@
+[
+  {
+    "record_id": "L019",
+    "source": "linkedin_csv",
+    "error_reason": "Row 19 (L019) rejected: Missing recipient name and valid contact endpoints (name='', email='None', linkedin='None')",
+    "raw_data": {
+      "lead_id": "L019",
+      "full_name": "",
+      "job_title": "",
+      "company": "",
+      "industry": "",
+      "company_size": "",
+      "location": "",
+      "linkedin_headline": "",
+      "recent_activity": "",
+      "connection_note": "Corrupt row missing full name and all contact information to test Dead Letter Queue isolation"
+    },
+    "timestamp_utc": "2026-10-28T14:55:09.325651+00:00"
+  },
+  {
+    "record_id": "fhir_malformed_corrupt_999",
+    "source": "smart_fhir_r4",
+    "error_reason": "Deliberate Ingestion Test: Empty patient name and empty telecom - String should have at least 1 character",
+    "raw_data": {
+      "resourceType": "Patient",
+      "id": "malformed_fhir_corrupt_999",
+      "name": [],
+      "telecom": [],
+      "meta": {
+        "tag": [
+          {
+            "code": "deliberate_corruption_test"
+          }
+        ]
+      }
+    },
+    "timestamp_utc": "2026-10-28T14:55:20.789627+00:00"
+  }
+]
